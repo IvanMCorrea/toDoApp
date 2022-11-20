@@ -6,4 +6,14 @@ const textStyles = StyleSheet.create({
     color: "blue",
   },
 });
-export { textStyles };
+
+const containerStyles = StyleSheet.create({
+  input: {
+    borderWidth: 1,
+    borderColor: "#555555",
+    borderRadius: 10,
+    padding: 10,
+    marginVertical: 10,
+  },
+});
+export { textStyles, containerStyles };
