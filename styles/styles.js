@@ -35,6 +35,11 @@ const containerStyles = StyleSheet.create({
     width: 125,
     alignItems: "center",
   },
+  layout: {
+    marginTop: Constants.statusBarHeight,
+    width: "100%",
+    height: "100%",
+  },
 });
 
 const imgStyles = StyleSheet.create({
