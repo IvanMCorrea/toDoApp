@@ -1,12 +1,13 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 import React from "react";
+import { containerStyles } from "../styles/styles";
 
-const toDoList = () => {
+const ToDoList = () => {
   return (
-    <View>
+    <ScrollView style={containerStyles.componentContainer}>
       <Text>toDoList</Text>
-    </View>
+    </ScrollView>
   );
 };
 
-export default toDoList;
+export default ToDoList;

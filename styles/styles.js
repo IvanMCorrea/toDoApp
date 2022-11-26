@@ -30,6 +30,10 @@ const containerStyles = StyleSheet.create({
     alignItems: "center",
     marginTop: 60,
   },
+  componentContainer: {
+    alignItems: "center",
+    marginTop: 30,
+  },
   input: {
     borderWidth: 1,
     borderColor: "#555555",
