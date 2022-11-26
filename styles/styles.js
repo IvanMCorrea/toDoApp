@@ -10,7 +10,15 @@ const textStyles = StyleSheet.create({
     color: "blue",
   },
   buttonText: {
-    color: "white",
+    fontWeight: "500",
+    letterSpacing: "1.2",
+    color: "#404040",
+  },
+  buttonTextGiga: {
+    fontSize: "32px",
+    fontWeight: "400",
+    letterSpacing: "1.2",
+    color: "#404040",
   },
   errorMsg: {
     color: "red",
@@ -18,6 +26,10 @@ const textStyles = StyleSheet.create({
 });
 
 const containerStyles = StyleSheet.create({
+  pageContainer: {
+    alignItems: "center",
+    marginTop: 60,
+  },
   input: {
     borderWidth: 1,
     borderColor: "#555555",
@@ -26,14 +38,21 @@ const containerStyles = StyleSheet.create({
     marginVertical: 10,
     width: "80%",
   },
-  button: {
-    borderWidth: 1,
-    borderColor: "#555555",
+  buttonPrimary: {
     borderRadius: 10,
     padding: 10,
-    backgroundColor: "blue",
+    backgroundColor: "#7BDBBE",
     width: 125,
     alignItems: "center",
+  },
+  buttonGiga: {
+    borderRadius: 10,
+    padding: 10,
+    backgroundColor: "#7BDBBE",
+    width: 250,
+    height: 100,
+    alignItems: "center",
+    justifyContent: "center",
   },
   layout: {
     marginTop: Constants.statusBarHeight,

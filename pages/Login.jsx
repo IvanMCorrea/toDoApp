@@ -39,7 +39,7 @@ const Login = () => {
       style={{ flex: 1 }}
     >
       <ScrollView>
-        <View style={{ alignItems: "center", marginTop: 60 }}>
+        <View style={containerStyles.pageContainer}>
           <Text style={[{ margin: 15 }, textStyles.appTitle]}>toDoApp</Text>
           <View
             style={{
@@ -102,7 +102,7 @@ const Login = () => {
           </TouchableOpacity>
           <TouchableOpacity
             onPress={handleSubmit(onSubmit)}
-            style={[{ marginTop: 20 }, containerStyles.button]}
+            style={[{ marginTop: 20 }, containerStyles.buttonPrimary]}
           >
             <Text style={textStyles.buttonText}>Login</Text>
           </TouchableOpacity>
