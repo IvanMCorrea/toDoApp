@@ -6,6 +6,9 @@ const textStyles = StyleSheet.create({
     fontSize: "28px",
     fontStyle: "italic",
   },
+  title: {
+    fontSize: "18px",
+  },
   link: {
     color: "blue",
   },
@@ -53,10 +56,18 @@ const containerStyles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
     backgroundColor: "#7BDBBE",
-    width: 250,
+    width: 300,
     height: 100,
     alignItems: "center",
     justifyContent: "center",
+  },
+  task: {
+    borderWidth: 1,
+    borderColor: "#555555",
+    borderRadius: 10,
+    width: 300,
+    height: 80,
+    padding: 10,
   },
   layout: {
     marginTop: Constants.statusBarHeight,

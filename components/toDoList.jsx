@@ -1,11 +1,15 @@
 import { View, Text, ScrollView } from "react-native";
 import React from "react";
-import { containerStyles } from "../styles/styles";
+import { containerStyles, textStyles } from "../styles/styles";
+import ToDoTask from "./ToDoTask";
 
 const ToDoList = () => {
   return (
-    <ScrollView style={containerStyles.componentContainer}>
-      <Text>toDoList</Text>
+    <ScrollView>
+      <View style={containerStyles.componentContainer}>
+        <Text style={textStyles.title}>To Do List</Text>
+        <ToDoTask />
+      </View>
     </ScrollView>
   );
 };
