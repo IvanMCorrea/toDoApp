@@ -13,13 +13,13 @@ const NewToDoModal = ({ setModalVisible, modalVisible }) => {
           ]}
         >
           <View
-            style={[containerStyles.modalView, { width: 280, height: 250 }]}
+            style={[containerStyles.modalView, { width: 320, height: 280 }]}
           >
-            <Text style={[{ margin: 20 }, textStyles.title]}>
+            <Text style={[{ margin: 40 }, textStyles.title]}>
               Add new To Do
             </Text>
             <TextInput
-              style={containerStyles.input}
+              style={[containerStyles.input, { marginBottom: 40 }]}
               /* onChangeText={(value) => onChange(value)} */
               /* value={value} */
             />
@@ -30,10 +30,16 @@ const NewToDoModal = ({ setModalVisible, modalVisible }) => {
                 justifyContent: "space-around",
               }}
             >
-              <TouchableOpacity onPress={() => setModalVisible(false)}>
+              <TouchableOpacity
+                onPress={() => setModalVisible(false)}
+                style={containerStyles.buttonSecondary}
+              >
                 <Text>BACK</Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={() => setModalVisible(false)}>
+              <TouchableOpacity
+                onPress={() => setModalVisible(false)}
+                style={containerStyles.buttonPrimary}
+              >
                 <Text>ADD</Text>
               </TouchableOpacity>
             </View>

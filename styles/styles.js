@@ -52,6 +52,13 @@ const containerStyles = StyleSheet.create({
     width: 125,
     alignItems: "center",
   },
+  buttonSecondary: {
+    borderRadius: 10,
+    padding: 10,
+    backgroundColor: "#FF5851",
+    width: 125,
+    alignItems: "center",
+  },
   buttonGiga: {
     borderRadius: 10,
     padding: 10,
@@ -83,7 +90,6 @@ const containerStyles = StyleSheet.create({
     margin: 20,
     backgroundColor: "white",
     borderRadius: 20,
-    padding: 35,
     alignItems: "center",
     shadowColor: "#000",
     shadowOffset: {
