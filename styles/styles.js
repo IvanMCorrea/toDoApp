@@ -3,11 +3,11 @@ import Constants from "expo-constants";
 
 const textStyles = StyleSheet.create({
   appTitle: {
-    fontSize: "28px",
+    fontSize: 28,
     fontStyle: "italic",
   },
   title: {
-    fontSize: "18px",
+    fontSize: 18,
   },
   link: {
     color: "blue",
@@ -18,7 +18,7 @@ const textStyles = StyleSheet.create({
     color: "#404040",
   },
   buttonTextGiga: {
-    fontSize: "32px",
+    fontSize: 32,
     fontWeight: "400",
     letterSpacing: "1.2",
     color: "#404040",
