@@ -14,13 +14,13 @@ const textStyles = StyleSheet.create({
   },
   buttonText: {
     fontWeight: "500",
-    letterSpacing: "1.2",
+    letterSpacing: 1.2,
     color: "#404040",
   },
   buttonTextGiga: {
     fontSize: 32,
     fontWeight: "400",
-    letterSpacing: "1.2",
+    letterSpacing: 1.2,
     color: "#404040",
   },
   errorMsg: {
