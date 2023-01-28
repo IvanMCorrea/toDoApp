@@ -1,19 +1,18 @@
 import { View, Text, ScrollView } from "react-native";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { containerStyles, textStyles } from "../styles/styles";
 import ToDoTask from "./ToDoTask";
 
 const ToDoList = ({ tasks }) => {
+  const [height, setHeight] = useState();
   return (
     <View style={[containerStyles.componentContainer]}>
       <Text style={textStyles.title}>To Do List</Text>
       <ScrollView
         contentContainerStyle={{
-          flexGrow: 1,
           alignItems: "center",
-          justifyContent: "center",
-          height: "auto",
           paddingBottom: 50,
+          height: height,
         }}
       >
         {tasks && tasks[0]

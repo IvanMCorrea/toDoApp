@@ -6,12 +6,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Controller, useForm } from "react-hook-form";
 import { storeData } from "../api/storage";
 
-const NewToDoModal = ({
-  setModalVisible,
-  modalVisible,
-  setNewTask,
-  newTask,
-}) => {
+const NewToDoModal = ({ setModalVisible, modalVisible, loadData }) => {
   const schema = yup
     .object({
       title: yup.string().required("Need to add a title"),
@@ -27,10 +22,10 @@ const NewToDoModal = ({
     resolver: yupResolver(schema),
   });
 
-  const handleForm = (values) => {
-    storeData("TO_DO_LIST", values);
+  const handleForm = async (values) => {
+    await storeData("TO_DO_LIST", values);
     setModalVisible(false);
-    setNewTask(!newTask);
+    await loadData();
   };
   return (
     <View style={containerStyles.centeredView}>
