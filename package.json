@@ -22,7 +22,8 @@
     "react-native": "0.70.5",
     "react-native-svg": "13.4.0",
     "react-router-native": "^6.4.3",
-    "yup": "^0.32.11"
+    "yup": "^0.32.11",
+    "expo-checkbox": "~2.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

@@ -33,4 +33,23 @@ const deleteData = async (key) => {
     console.log("error: ", e);
   }
 };
-export { storeData, getData, deleteData };
+
+const deleteItemByPosition = async (index) => {
+  try {
+    const jsonValue = await AsyncStorage.getItem("TO_DO_LIST");
+    const data = jsonValue != null ? JSON.parse(jsonValue) : null;
+    if (data) {
+      try {
+        data.splice(index, 1);
+        const jsonReturn = JSON.stringify(data);
+        await AsyncStorage.setItem("TO_DO_LIST", jsonReturn);
+      } catch (error) {
+        console.log("error: ", error);
+      }
+    }
+  } catch (e) {
+    console.log("error: ", e);
+  }
+};
+
+export { storeData, getData, deleteData, deleteItemByPosition };

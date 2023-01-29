@@ -102,6 +102,24 @@ const containerStyles = StyleSheet.create({
   },
 });
 
+const stylesCheckbox = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginHorizontal: 16,
+    marginVertical: 32,
+  },
+  section: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  paragraph: {
+    fontSize: 15,
+  },
+  checkbox: {
+    margin: 8,
+  },
+});
+
 const imgStyles = StyleSheet.create({
   logo: {
     borderColor: "#555555",
@@ -110,4 +128,4 @@ const imgStyles = StyleSheet.create({
     padding: 15,
   },
 });
-export { textStyles, containerStyles, imgStyles };
+export { textStyles, containerStyles, imgStyles, stylesCheckbox };

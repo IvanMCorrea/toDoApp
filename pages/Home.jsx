@@ -40,7 +40,9 @@ const Home = () => {
         >
           <Text style={textStyles.buttonText}>Delete Tasks</Text>
         </TouchableOpacity>
-        {!isLoading && tasks && tasks[0] && <ToDoList tasks={tasks} />}
+        {!isLoading && tasks && tasks[0] && (
+          <ToDoList tasks={tasks} loadData={loadData} />
+        )}
         <NewToDoModal
           modalVisible={modalVisible}
           setModalVisible={setModalVisible}
